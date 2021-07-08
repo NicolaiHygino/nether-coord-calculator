@@ -1,3 +1,113 @@
+/* || General Settings */
+@font-face {
+  font-family: "minecraft";
+  src: url("./font/minecraft.woff2") format("woff2"),
+    url("./font/minecraft.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "minecraft", sans-serif;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* || End General Settings */
+
+body {
+  background-image: url("/src/images/minecraft-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.window-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Calculator {
+  width: 18rem;
+  background-color: #c6c6c6;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 h2 {
   text-transform: capitalize;
+  text-align: center;
+  color: #3d3d3d;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+}
+
+.input-fields p label {
+  display: block;
+  text-align: center;
+}
+
+input[type="tel"] {
+  width: 4.5rem;
+  height: 2.5rem;
+  margin-right: 3px;
+  font-family: "minecraft";
+  font-size: 1rem;
+  text-align: center;
+  border: 0;
+  background-color: #8b8b8b;
+  box-shadow: 3px 3px 0px 0px #ffffff, inset 3px 3px 0px 0px #373737,
+    3px 0px 0px 0px #8c8c8c, 0px 3px 0px 0px #8c8c8c;
+}
+
+.input-wrapper {
+  width: 10rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.button {
+  width: 13rem;
+  height: 3rem;
+  cursor: pointer;
+  font-family: "minecraft";
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 4px 2px #373737;
+  background-image: url("./images/minecraft-button-texture.jpg");
+  margin: 0 auto;
+  border: 2px solid black;
+  box-shadow: inset 2px 2px 0px 0px rgba(255, 255, 255, 0.4),
+    inset -2px -4px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  border: 2px solid white;
 }
