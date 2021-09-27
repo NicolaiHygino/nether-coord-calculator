@@ -1,10 +1,10 @@
-function InputSection(props) {
-  const world = props.world;
-  
+import React from 'react';
+
+function InputSection({ world, x, y, z, onInputChange }) {  
   function handleInputChange(e) {
     const value = e.target.value;
     const name = e.target.name;
-    props.onInputChange(value, world, name);
+    onInputChange(value, world, name);
   }
 
   return (
@@ -17,7 +17,7 @@ function InputSection(props) {
             type="tel"
             id={"x-" + world}
             name="x"
-            value={props.x}
+            value={x}
             onChange={handleInputChange}
           />
         </p>
@@ -27,7 +27,7 @@ function InputSection(props) {
             type="tel"
             id={"y-" + world}
             name="y"
-            value={props.y}
+            value={y}
             onChange={handleInputChange}
           />
         </p>
@@ -37,7 +37,7 @@ function InputSection(props) {
             type="tel"
             id={"z-" + world}
             name="z"
-            value={props.z}
+            value={z}
             onChange={handleInputChange}
           />
         </p>
